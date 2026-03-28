@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Manage Patients</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h2 class="text-2xl font-bold text-green-700 flex items-center gap-2">
+        <i class="fas fa-procedures"></i> Manage Patients   
+      </h2>
+      <a href="dashboard_admin.html" class="text-sm text-green-600 hover:underline">
+        <i class="fas fa-arrow-left mr-1"></i> Back to Dashboard
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-3xl mx-auto w-full p-6 bg-white rounded-xl shadow mt-6">
+    <!-- Form -->
+    <form id="patientForm" class="space-y-4 mb-8">
+      <h3 class="text-lg font-semibold text-gray-700">Add New Patient</h3>
+      <input id="name" type="text" placeholder="Patient's Full Name" class="w-full border rounded p-3 focus:outline-none focus:ring-2 focus:ring-green-500" required />
+      <input id="age" type="number" placeholder="Age" class="w-full border rounded p-3 focus:outline-none focus:ring-2 focus:ring-green-500" required />
+      <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded shadow transition duration-200 w-full sm:w-auto">
+        <i class="fas fa-plus-circle mr-2"></i> Add Patient
+      </button>
+    </form>
+
+    <!-- Patient List -->
+    <div id="patientList" class="space-y-4">
+      <!-- Cards will be inserted here dynamically -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white mt-10 py-4 text-center text-sm text-gray-500 border-t">
+    &copy; 2026 OT Scheduler &middot; All rights reserved
+  </footer>
+
+  <script src="env.js"></script>
+  <script type="module" src="./js/patient.js"></script>
+</body>
+</html>

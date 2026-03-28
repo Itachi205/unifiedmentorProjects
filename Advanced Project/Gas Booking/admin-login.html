@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/flexslider.css">
+  <link rel="stylesheet" href="assets/css/legacy-theme.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body data-auth-role="admin" data-redirect-target="admin/admin-dashboard.html">
+<div class="header"><div class="container"><div class="header-top"><div class="header-left"><ul data-auth-links data-login-href="admin-login.html" data-register-href="admin-registration.html"></ul></div><div class="header-right"><div class="search2"><input type="text" value="Admin login" readonly></div></div></div></div></div>
+<div class="main-1"><div class="container"><div class="login-page"><div class="app-panel">
+  <h2 style="text-align:center;">Admin Login</h2>
+  <div id="authNotice" class="app-notice"></div>
+  <div class="demo-login-panel">
+    <h4>Working Admin Demo</h4>
+    <div class="demo-login-grid">
+      <div class="demo-login-card">
+        <div class="demo-login-role">Admin</div>
+        <p><strong>Email:</strong> admin@1234.gmail.com</p>
+        <p><strong>Password:</strong> Admin1234</p>
+      </div>
+    </div>
+  </div>
+  <form id="loginForm">
+    <div><span>Email<label>*</label></span><input id="loginEmail" class="app-input" type="email" required></div>
+    <div><span>Password<label>*</label></span><input id="loginPassword" class="app-input" type="password" required></div>
+    <button class="app-button" type="submit">Login As Admin</button>
+    <p style="margin-top:10px;">Need admin account? <a href="admin-registration.html">Register Admin</a></p>
+    <p style="margin-top:10px;">Consumer? <a href="consumer-login.html">Go to Consumer Login</a></p>
+  </form>
+</div></div></div></div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/auth.js"></script>
+</body>
+</html>

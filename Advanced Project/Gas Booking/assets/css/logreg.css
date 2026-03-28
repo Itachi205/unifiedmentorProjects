@@ -1,0 +1,118 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #1ab188;
+  transition: .5s ease;
+}
+
+a:hover {
+  color: #179b77;
+}
+
+.form {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+}
+
+.tab-group {
+  list-style: none;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.tab-group li {
+  float: left;
+  width: 50%;
+}
+
+.tab-group li a {
+  display: block;
+  padding: 15px;
+  background: rgba(160,179,176,0.25);
+  color: #a0b3b0;
+  text-align: center;
+}
+
+.tab-group .active a {
+  background: #1ab188;
+  color: white;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+label {
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  color: rgba(255,255,255,0.5);
+  font-size: 16px;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+/* WHEN ACTIVE (typing) */
+label.active {
+  top: -15px;
+  left: 10px;
+  font-size: 12px;
+  color: #1ab188;
+}
+
+/* Highlight effect */
+label.highlight {
+  color: #ffffff;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a0b3b0;
+  background: transparent;
+  color: white;
+}
+
+input:focus {
+  border-color: #1ab188;
+  outline: none;
+}
+
+.button {
+  width: 100%;
+  padding: 15px;
+  background: #1ab188;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #179b77;
+}
+
+.forgot {
+  text-align: right;
+}

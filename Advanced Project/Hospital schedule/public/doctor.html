@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Manage Doctors</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto p-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-700 flex items-center gap-2">
+        <i class="fas fa-user-md"></i> Doctor Management
+      </h1>
+      <a href="dashboard_admin.html" class="text-sm text-blue-600 hover:underline">
+        <i class="fas fa-arrow-left mr-1"></i> Back to Dashboard
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-3xl mx-auto w-full p-6 bg-white rounded-lg shadow mt-6">
+    <!-- Form -->
+    <form id="doctorForm" class="space-y-4 mb-8">
+      <h2 class="text-lg font-semibold text-gray-700">Add a New Doctor</h2>
+      <input id="name" type="text" placeholder="Doctor's Full Name" class="w-full border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+      <input id="specialty" type="text" placeholder="Specialty (e.g., Cardiologist)" class="w-full border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+      <button class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded shadow transition duration-200 w-full sm:w-auto">
+        <i class="fas fa-plus-circle mr-2"></i> Add Doctor
+      </button>
+    </form>
+
+    <!-- Doctor List -->
+    <div id="doctorList" class="space-y-4">
+      <!-- Cards will be inserted here dynamically -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white mt-10 py-4 text-center text-sm text-gray-500 border-t">
+    &copy; 2026 OT Scheduler &middot; All rights reserved
+  </footer>
+
+  <script src="env.js"></script>
+  <script type="module" src="./js/doctor.js"></script>
+</body>
+</html>

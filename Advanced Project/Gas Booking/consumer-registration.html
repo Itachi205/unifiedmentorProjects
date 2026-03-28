@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumer Registration</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/flexslider.css">
+  <link rel="stylesheet" href="assets/css/legacy-theme.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body data-auth-role="consumer" data-redirect-target="consumer/consumer-dashboard.html">
+<div class="header"><div class="container"><div class="header-top"><div class="header-left"><ul data-auth-links data-login-href="consumer-login.html" data-register-href="consumer-registration.html"></ul></div><div class="header-right"><div class="search2"><input type="text" value="Consumer registration" readonly></div></div></div></div></div>
+<div class="main-1"><div class="container"><div class="login-page"><div class="app-panel">
+  <h2 style="text-align:center;">Consumer Registration</h2>
+  <div id="authNotice" class="app-notice"></div>
+  <form id="registerForm">
+    <div class="register-top-grid">
+      <h3>Consumer Information</h3>
+      <div><span>First Name<label>*</label></span><input id="registerFirstName" class="app-input" type="text" required></div>
+      <div><span>Last Name<label>*</label></span><input id="registerLastName" class="app-input" type="text" required></div>
+      <div><span>Email<label>*</label></span><input id="registerEmail" class="app-input" type="email" required></div>
+    </div>
+    <div class="register-bottom-grid">
+      <h3>Login Info</h3>
+      <div><span>Password<label>*</label></span><input id="registerPassword" class="app-input" type="password" required></div>
+      <div><span>Confirm Password<label>*</label></span><input id="registerConfirmPassword" class="app-input" type="password" required></div>
+    </div>
+    <div class="register-but"><button class="app-button" type="submit">Register Consumer</button></div>
+    <p style="margin-top:10px;">Already registered? <a href="consumer-login.html">Login as Consumer</a></p>
+  </form>
+</div></div></div></div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/auth.js"></script>
+</body>
+</html>

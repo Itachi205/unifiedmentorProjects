@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order History</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/legacy-theme.css">
+  <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body>
+  <div class="header"><div class="container"><div class="header-top"><div class="header-left"><ul data-auth-links data-register-href="../registration.html" data-login-href="../login.html"></ul></div><div class="header-right"><div class="search2"><input type="text" value="Your booking history" readonly></div></div><div class="clearfix"></div></div></div></div>
+  <div class="header-bottom"><div class="container"><div class="logo"><a href="consumer-dashboard.html"><img src="../assets/theme/images/logo11.PNG" class="img-responsive" alt="Logo"></a></div><div class="head-nav"><span class="menu" data-menu-toggle=".head-nav ul"></span><ul><li><a href="consumer-dashboard.html">Home</a></li><li><a href="book-cylinder.html">Book Cylinder</a></li><li class="active"><a href="order-history.html">Orders</a></li><li><a href="profile.html">Profile</a></li><li><a href="#" data-logout>Logout</a></li><div class="clearfix"></div></ul></div><div class="clearfix"></div></div></div>
+  <div class="banner-1"></div>
+  <div class="main">
+    <div class="container">
+      <div class="app-panel">
+        <h2>Order History</h2>
+        <div class="app-table-wrap">
+          <table class="app-table">
+            <thead>
+              <tr>
+                <th>Booking ID</th>
+                <th>Name</th>
+                <th>UN Number</th>
+                <th>Selender Type</th>
+                <th>Address</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="orderTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container"><p>© 2026 Indian Gas Agency</p></div></div>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/order.js"></script>
+</body>
+</html>
